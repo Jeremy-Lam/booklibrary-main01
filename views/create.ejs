@@ -21,7 +21,7 @@
             font-weight: 500 !important;
             transition: all 0.2s ease !important;
             margin: 0 5px !important;
-            min-width: 80px;
+            min-width: 100px;
         }
         .btn-primary { background: #007bff; color: white; }
         .btn-primary:hover { background: #0056b3; }
@@ -39,7 +39,7 @@
             <div class="error"><%= error %></div>
         <% } %>
 
-        <form method="POST">
+        <form method="POST" action="/books">
             <div class="form-group">
                 <label for="isbn">ISBN *</label>
                 <input type="text" id="isbn" name="isbn" value="<%= typeof formData !== 'undefined' ? formData.isbn : '' %>" required>
